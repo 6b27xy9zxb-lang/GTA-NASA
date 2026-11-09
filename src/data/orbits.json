@@ -1,0 +1,42 @@
+[
+  {
+    "id": "orbit-leo",
+    "name": "Low Earth Orbit (550 km Sun-Synchronous)",
+    "distanceFromSunAu": 1.0,
+    "deltaVRequiredKmS": 0.35,
+    "solarFluxMultiplier": 1.0,
+    "ambientRadiationLevel": "low",
+    "commDistanceAu": 0.003,
+    "lightDelayMinutes": 0.0003
+  },
+  {
+    "id": "orbit-moon",
+    "name": "Lunar Polar Science Orbit (100 km)",
+    "distanceFromSunAu": 1.0,
+    "deltaVRequiredKmS": 1.25,
+    "solarFluxMultiplier": 1.0,
+    "ambientRadiationLevel": "moderate",
+    "commDistanceAu": 0.0026,
+    "lightDelayMinutes": 0.021
+  },
+  {
+    "id": "orbit-mars",
+    "name": "Mars Low Areocentric Science Orbit (350 km)",
+    "distanceFromSunAu": 1.52,
+    "deltaVRequiredKmS": 2.1,
+    "solarFluxMultiplier": 0.43,
+    "ambientRadiationLevel": "moderate",
+    "commDistanceAu": 1.52,
+    "lightDelayMinutes": 12.6
+  },
+  {
+    "id": "orbit-europa",
+    "name": "Europa Jovian Resonance Flyby Orbit",
+    "distanceFromSunAu": 5.2,
+    "deltaVRequiredKmS": 2.9,
+    "solarFluxMultiplier": 0.037,
+    "ambientRadiationLevel": "extreme",
+    "commDistanceAu": 5.2,
+    "lightDelayMinutes": 43.2
+  }
+]

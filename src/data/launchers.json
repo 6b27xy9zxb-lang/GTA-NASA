@@ -1,0 +1,67 @@
+[
+  {
+    "id": "launcher-pegasus",
+    "name": "Falcon-Lite Mini",
+    "manufacturer": "Commercial Spaceflight Consortium",
+    "cost": 15,
+    "leoCapacityKg": 1800,
+    "lunarCapacityKg": 600,
+    "marsCapacityKg": 350,
+    "deepSpaceCapacityKg": 180,
+    "reliability": 0.94,
+    "maxFairingDiameterMeters": 2.4,
+    "description": "Economical small-lift booster ideal for low Earth orbit satellite missions and lightweight probes."
+  },
+  {
+    "id": "launcher-atlas",
+    "name": "Vulcan-Centaur Standard",
+    "manufacturer": "United Launch Alliance Partner",
+    "cost": 82,
+    "leoCapacityKg": 8500,
+    "lunarCapacityKg": 3200,
+    "marsCapacityKg": 2100,
+    "deepSpaceCapacityKg": 1400,
+    "reliability": 0.97,
+    "maxFairingDiameterMeters": 4.2,
+    "description": "Reliable medium-heavy launcher with high-energy cryogenic upper stage for interplanetary trajectories."
+  },
+  {
+    "id": "launcher-falcon-heavy",
+    "name": "Hyperion Heavy Three-Core",
+    "manufacturer": "AeroSpace Dynamics",
+    "cost": 125,
+    "leoCapacityKg": 22000,
+    "lunarCapacityKg": 9500,
+    "marsCapacityKg": 6800,
+    "deepSpaceCapacityKg": 4200,
+    "reliability": 0.98,
+    "maxFairingDiameterMeters": 5.2,
+    "description": "Massive three-core reusable booster delivering exceptional payload mass to high-energy outer planet orbits."
+  },
+  {
+    "id": "launcher-sls",
+    "name": "Artemis SLS Deep Explorer",
+    "manufacturer": "NASA Space Launch Directorate",
+    "cost": 210,
+    "leoCapacityKg": 45000,
+    "lunarCapacityKg": 27000,
+    "marsCapacityKg": 16000,
+    "deepSpaceCapacityKg": 11000,
+    "reliability": 0.99,
+    "maxFairingDiameterMeters": 8.4,
+    "description": "Super-heavy exploration rocket capable of direct injection to Jupiter and the outer solar system."
+  },
+  {
+    "id": "launcher-starship",
+    "name": "Aegis Star-Lifter Superheavy",
+    "manufacturer": "Orbital Frontiers Group",
+    "cost": 160,
+    "leoCapacityKg": 65000,
+    "lunarCapacityKg": 35000,
+    "marsCapacityKg": 24000,
+    "deepSpaceCapacityKg": 16000,
+    "reliability": 0.96,
+    "maxFairingDiameterMeters": 9.0,
+    "description": "Next-generation fully reusable heavy architecture with cavernous 9-meter payload fairing volume."
+  }
+]

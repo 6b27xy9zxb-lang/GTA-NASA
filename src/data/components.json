@@ -1,0 +1,225 @@
+[
+  {
+    "id": "bus-small",
+    "name": "MicroSat Bus (Class A)",
+    "category": "bus",
+    "mass": 90,
+    "powerConsumption": 15,
+    "cost": 8,
+    "description": "Compact aluminum unibody designed for rapid cube/small sat deployment.",
+    "specs": {
+      "capacityKg": 300,
+      "reliabilityRating": 0.92
+    }
+  },
+  {
+    "id": "bus-medium",
+    "name": "Explorer Core Bus (Class B)",
+    "category": "bus",
+    "mass": 220,
+    "powerConsumption": 35,
+    "cost": 28,
+    "description": "Versatile medium frame with internal avionics bay and standard instrument mounts.",
+    "specs": {
+      "capacityKg": 800,
+      "reliabilityRating": 0.96
+    }
+  },
+  {
+    "id": "bus-large",
+    "name": "Deep-Voyager Bus (Class C)",
+    "category": "bus",
+    "mass": 480,
+    "powerConsumption": 60,
+    "cost": 45,
+    "description": "Heavy-duty radiation-shielded chassis capable of hosting multi-ton science payloads.",
+    "specs": {
+      "capacityKg": 2500,
+      "reliabilityRating": 0.98
+    }
+  },
+  {
+    "id": "solar-small",
+    "name": "Standard Fixed Solar Panels (2m\u00b2)",
+    "category": "solar",
+    "mass": 18,
+    "powerConsumption": -150,
+    "cost": 8,
+    "description": "Body-mounted silicon crystalline panels generating up to 150W at 1 AU.",
+    "specs": {
+      "powerGenerationW": 150
+    }
+  },
+  {
+    "id": "solar-medium",
+    "name": "Dual Articulated Solar Wings (6m\u00b2)",
+    "category": "solar",
+    "mass": 42,
+    "powerConsumption": -450,
+    "cost": 13,
+    "description": "Sun-tracking dual panels generating 450W at 1 AU. Folds during launch.",
+    "specs": {
+      "powerGenerationW": 450
+    }
+  },
+  {
+    "id": "solar-large",
+    "name": "Mega-Array Tracking Wings (15m\u00b2)",
+    "category": "solar",
+    "mass": 95,
+    "powerConsumption": -1100,
+    "cost": 34,
+    "description": "High-efficiency triple-junction GaAs array producing 1100W at 1 AU.",
+    "specs": {
+      "powerGenerationW": 1100
+    }
+  },
+  {
+    "id": "power-rtg-base",
+    "name": "GPHS-RTG Deep Space Core",
+    "category": "power_source",
+    "mass": 60,
+    "powerConsumption": -250,
+    "cost": 42,
+    "description": "General Purpose Heat Source RTG. Produces steady 250W irrespective of solar distance.",
+    "specs": {
+      "powerGenerationW": 250
+    }
+  },
+  {
+    "id": "battery-standard",
+    "name": "Lithium-Ion Battery Bank (1.5 kWh)",
+    "category": "battery",
+    "mass": 25,
+    "powerConsumption": 5,
+    "cost": 4,
+    "description": "Space-rated secondary cell buffer supporting orbital eclipse periods up to 2.5 hours.",
+    "specs": {
+      "powerCapacityWh": 1500
+    }
+  },
+  {
+    "id": "battery-advanced",
+    "name": "Solid-State Li-Sulfur Matrix (4.0 kWh)",
+    "category": "battery",
+    "mass": 45,
+    "powerConsumption": 8,
+    "cost": 15,
+    "description": "High energy-density pack providing deep discharge resilience for extended shadowed passes.",
+    "specs": {
+      "powerCapacityWh": 4000
+    }
+  },
+  {
+    "id": "antenna-s-band",
+    "name": "S-Band Omni + Medium Horn",
+    "category": "antenna",
+    "mass": 14,
+    "powerConsumption": 25,
+    "cost": 7,
+    "description": "Broad-beam antenna suited for LEO and lunar distances with low pointing requirements.",
+    "specs": {
+      "downlinkRateMbps": 2.5,
+      "commRangeAu": 1.5
+    }
+  },
+  {
+    "id": "antenna-ka-band",
+    "name": "Ka-Band Gimbaled High-Gain Reflector",
+    "category": "antenna",
+    "mass": 48,
+    "powerConsumption": 85,
+    "cost": 15,
+    "description": "Precision steered 2.4m parabolic dish achieving up to 28 Mbps at interplanetary ranges.",
+    "specs": {
+      "downlinkRateMbps": 28.0,
+      "commRangeAu": 8.0
+    }
+  },
+  {
+    "id": "computer-basic",
+    "name": "RAD750 Single-Board Computer",
+    "category": "computer",
+    "mass": 8,
+    "powerConsumption": 18,
+    "cost": 6,
+    "description": "Battle-tested radiation-hardened PowerPC processor with standard telemetry sequencing.",
+    "specs": {
+      "reliabilityRating": 0.94
+    }
+  },
+  {
+    "id": "computer-advanced",
+    "name": "Quad-Core HPSC Neuromorphic System",
+    "category": "computer",
+    "mass": 15,
+    "powerConsumption": 45,
+    "cost": 24,
+    "description": "High-Performance Spaceflight Computing chip with autonomous hazard avoidance and data compression.",
+    "specs": {
+      "reliabilityRating": 0.99
+    }
+  },
+  {
+    "id": "acs-reaction-wheels",
+    "name": "3-Axis Reaction Wheels + Hydrazine RCS",
+    "category": "acs",
+    "mass": 32,
+    "powerConsumption": 30,
+    "cost": 10,
+    "description": "Precision momentum management for high instrument pointing accuracy and slewing.",
+    "specs": {
+      "reliabilityRating": 0.95
+    }
+  },
+  {
+    "id": "shielding-standard",
+    "name": "Standard Graded-Z Aluminum Shielding",
+    "category": "radiation_shield",
+    "mass": 65,
+    "powerConsumption": 0,
+    "cost": 7,
+    "description": "Lightweight aerospace alloy layering protecting against primary cosmic rays and low-energy protons.",
+    "specs": {
+      "radiationAbsorptionPercent": 30
+    }
+  },
+  {
+    "id": "fuel-tank-std",
+    "name": "Titanium Welded Monopropellant Tank",
+    "category": "fuel_tank",
+    "mass": 55,
+    "powerConsumption": 4,
+    "cost": 8,
+    "description": "Surface tension propellant management device storing up to 1000 kg hydrazine.",
+    "specs": {
+      "capacityKg": 1000
+    }
+  },
+  {
+    "id": "propulsion-chemical",
+    "name": "Hypergolic Bipropellant Engine (450N)",
+    "category": "propulsion",
+    "mass": 42,
+    "powerConsumption": 20,
+    "cost": 12,
+    "description": "Monomethylhydrazine / Nitrogen Tetroxide biprop engine. High thrust for fast orbital insertions.",
+    "specs": {
+      "ispSeconds": 325,
+      "thrustKn": 0.45
+    }
+  },
+  {
+    "id": "propulsion-ion",
+    "name": "NEXT-C Gridded Ion Propulsion Thruster",
+    "category": "propulsion",
+    "mass": 70,
+    "powerConsumption": 160,
+    "cost": 38,
+    "description": "High specific impulse electrostatic xenon engine. Low continuous thrust, outstanding fuel economy.",
+    "specs": {
+      "ispSeconds": 4100,
+      "thrustKn": 0.00024
+    }
+  }
+]

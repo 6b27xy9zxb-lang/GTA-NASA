@@ -1,0 +1,67 @@
+{
+  "physics": {
+    "standardGravityG0": 9.80665,
+    "solarIrradiance1AuWattsPerSqM": 1361,
+    "speedOfLightKmS": 299792,
+    "astronomicalUnitKm": 149597870.7
+  },
+  "scoringWeights": {
+    "science": 0.40,
+    "engineeringEfficiency": 0.20,
+    "budgetEfficiency": 0.15,
+    "survival": 0.15,
+    "resourceManagement": 0.10
+  },
+  "radiation": {
+    "annualBaseCosmicRad": 15,
+    "europaJovianRadMultiplier": 350,
+    "marsRadMultiplier": 18,
+    "leosRadMultiplier": 1.2,
+    "lethalAnnualDoseRad": 4500
+  },
+  "achievements": [
+    {
+      "id": "ach-frugal-engineer",
+      "name": "Frugal Engineer",
+      "description": "Complete any scenario using less than 75% of the allocated budget limit.",
+      "icon": "PiggyBank"
+    },
+    {
+      "id": "ach-zero-waste-data",
+      "name": "Zero Waste Data",
+      "description": "Downlink over 98% of all scientific data collected by your instruments.",
+      "icon": "Radio"
+    },
+    {
+      "id": "ach-perfect-margin",
+      "name": "Perfect Margin",
+      "description": "Achieve over 15% positive margin on mass, power, and delta-V simultaneously.",
+      "icon": "CheckCircle2"
+    },
+    {
+      "id": "ach-mission-survivor",
+      "name": "Mission Survivor",
+      "description": "Successfully complete a mission with less than 20% hull remaining.",
+      "icon": "ShieldAlert"
+    },
+    {
+      "id": "ach-master-communicator",
+      "name": "Master Communicator",
+      "description": "Maintain uninterrupted high-bandwidth link across interplanetary distances.",
+      "icon": "Wifi"
+    },
+    {
+      "id": "ach-scientific-pioneer",
+      "name": "Scientific Pioneer",
+      "description": "Gather more than 1,000 science points in a single mission run.",
+      "icon": "Sparkles"
+    },
+    {
+      "id": "ach-survived-three-failures",
+      "name": "Survived Three Failures",
+      "description": "Encounter and successfully resolve three distinct critical in-flight emergencies.",
+      "icon": "Activity"
+    }
+  ],
+  "disclaimer": "GTA NASA uses a simplified educational engineering model for pedagogical gameplay. It does not replace professional mission certification or NASA flight dynamics software."
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "titan-x",
+    "name": "Titan-X",
+    "tagline": "Heavy Deep-Space Research Platform",
+    "description": "Engineered for maximum scientific payload and endurance. The Titan-X features reinforced structural spars and high-capacity fuel manifolds, but its immense mass requires heavy-lift launch vehicles and limits maneuverability.",
+    "hullStrength": 160,
+    "speedRating": 4,
+    "dryMass": 1250,
+    "maxFuelCapacity": 1800,
+    "baseCommRangeAu": 6.5,
+    "hardpointSlots": 5,
+    "specialAbility": "Heavy Cargo Bay: +25% fuel tank volume & +10% payload mass allowance",
+    "disadvantage": "High Dry Mass: Requires heavy launch vehicle tier & higher delta-V burns",
+    "cost": 85,
+    "visualStyle": {
+      "accentColor": "#00f0ff",
+      "modelType": "heavy",
+      "scale": [
+        1.4,
+        1.2,
+        1.5
+      ]
+    }
+  },
+  {
+    "id": "aero-dart",
+    "name": "Aero-Dart",
+    "tagline": "Ultralight Interplanetary Courier",
+    "description": "Constructed from carbon-composite microlattices, the Aero-Dart is designed for rapid transit and flybys. Due to its lightweight minimalist frame, it has strictly 3 modification hardpoints and lower hull resilience.",
+    "hullStrength": 75,
+    "speedRating": 9,
+    "dryMass": 420,
+    "maxFuelCapacity": 600,
+    "baseCommRangeAu": 5.0,
+    "hardpointSlots": 3,
+    "specialAbility": "High Delta-V Efficiency: +15% effective thruster Isp due to low inertia",
+    "disadvantage": "Structural Fragility: Only 3 hardpoint slots and vulnerability to micrometeorites",
+    "cost": 25,
+    "visualStyle": {
+      "accentColor": "#f59e0b",
+      "modelType": "interceptor",
+      "scale": [
+        0.85,
+        0.75,
+        1.6
+      ]
+    }
+  },
+  {
+    "id": "nova-core",
+    "name": "Nova-Core",
+    "tagline": "Next-Gen Experimental Cruiser",
+    "description": "NASA's premier balanced architecture. Equipped with an experimental magnetoplasmadynamic propulsion harness and integrated optical communication bus. Offers reliable operational flexibility across all mission profiles.",
+    "hullStrength": 110,
+    "speedRating": 7,
+    "dryMass": 780,
+    "maxFuelCapacity": 1100,
+    "baseCommRangeAu": 6.0,
+    "hardpointSlots": 5,
+    "specialAbility": "Hybrid Power Grid: Solar and RTG power distribution efficiency +12%",
+    "disadvantage": "Experimental Avionics: Slight budget premium and complex component tolerances",
+    "cost": 70,
+    "visualStyle": {
+      "accentColor": "#38bdf8",
+      "modelType": "cruiser",
+      "scale": [
+        1.1,
+        1.0,
+        1.2
+      ]
+    }
+  },
+  {
+    "id": "goliath",
+    "name": "Goliath",
+    "tagline": "Armored Jovian Super-Structure",
+    "description": "A fortress against lethal radiation belts and particle fields. Built with tungsten-boron composite shielding and triple-redundant structural bulkheads. However, heavy shielding attenuates antenna gain, reducing effective comm range.",
+    "hullStrength": 220,
+    "speedRating": 3,
+    "dryMass": 1600,
+    "maxFuelCapacity": 1400,
+    "baseCommRangeAu": 3.8,
+    "hardpointSlots": 5,
+    "specialAbility": "Aegis Bulkhead: Natural 35% radiation attenuation and double micrometeorite resistance",
+    "disadvantage": "Comm Attenuation: Weak default high-gain array, requires dedicated comm upgrades",
+    "cost": 95,
+    "visualStyle": {
+      "accentColor": "#ec4899",
+      "modelType": "dreadnought",
+      "scale": [
+        1.6,
+        1.4,
+        1.3
+      ]
+    }
+  }
+]

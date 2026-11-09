@@ -1,0 +1,79 @@
+[
+  {
+    "id": "europa-clipper",
+    "name": "Europa Clipper",
+    "target": "Europa / Jupiter",
+    "launchYear": 2024,
+    "dryMassKg": 3241,
+    "totalMassKg": 6065,
+    "powerSystem": "Massive 30.5m Solar Array (700W at Jupiter)",
+    "propellantMassKg": 2750,
+    "costBillionUsd": 5.0,
+    "primaryInstruments": [
+      "Radar for Europa Assessment and Sounding: Ocean to Near-surface (REASON)",
+      "Europa Imaging System (EIS)",
+      "Europa Thermal Emission Imaging System (E-THEMIS)",
+      "Mapping Imaging Spectrometer for Europa (MISE)",
+      "Interior Characterization of Europa using Magnetometry (ICEMAG)"
+    ],
+    "keyEngineeringChallenge": "Surviving Jupiter's intense radiation environment while generating sufficient electrical power at 5.2 AU using solar panels spanning over 30 meters.",
+    "educationalComparison": "Notice how Europa Clipper carries 2,750 kg of fuel (nearly half its total launch weight!) just to decelerate and perform flybys. Generating power at 5.2 AU required the largest solar arrays ever built for a planetary mission."
+  },
+  {
+    "id": "lunar-reconnaissance-orbiter",
+    "name": "Lunar Reconnaissance Orbiter (LRO)",
+    "target": "Moon (Low Polar Orbit)",
+    "launchYear": 2009,
+    "dryMassKg": 1018,
+    "totalMassKg": 1916,
+    "powerSystem": "Single 3.2m x 4.3m Solar Array (1850W) + Li-ion Battery",
+    "propellantMassKg": 898,
+    "costBillionUsd": 0.58,
+    "primaryInstruments": [
+      "Lunar Reconnaissance Orbiter Camera (LROC)",
+      "Lunar Orbiter Laser Altimeter (LOLA)",
+      "Diviner Lunar Radiometer Experiment (DLRE)",
+      "Mini-RF Synthetic Aperture Radar"
+    ],
+    "keyEngineeringChallenge": "Thermal extremes (120°C to -230°C) and massive downlink volume: LRO returns hundreds of terabits of imagery per year using a high-rate Ka-band link.",
+    "educationalComparison": "LRO shows how Ka-band high-gain communications enable high-resolution surface mapping. Without Ka-band, its 0.5-meter resolution imagery would take decades to downlink."
+  },
+  {
+    "id": "maven",
+    "name": "MAVEN (Mars Atmosphere and Volatile EvolutioN)",
+    "target": "Mars Elliptical Science Orbit",
+    "launchYear": 2013,
+    "dryMassKg": 903,
+    "totalMassKg": 2454,
+    "powerSystem": "Two 2.3m x 1.9m Solar Wings (1135W at Earth, ~490W at Mars)",
+    "propellantMassKg": 1551,
+    "costBillionUsd": 0.67,
+    "primaryInstruments": [
+      "Imaging Ultraviolet Spectrograph (IUVS)",
+      "Magnetometer (MAG)",
+      "Solar Wind Electron Analyzer (SWEA)",
+      "Neutral Gas and Ion Mass Spectrometer (NGIMS)"
+    ],
+    "keyEngineeringChallenge": "Balancing solar wing area against high atmospheric drag during 'deep dip' campaigns into Mars's upper atmosphere.",
+    "educationalComparison": "MAVEN illustrates the inverse-square law of solar power: its panels generated 1,135W at launch near Earth, but only 490W once arriving at Mars at 1.52 AU."
+  },
+  {
+    "id": "juno",
+    "name": "Juno",
+    "target": "Jupiter Polar Orbit",
+    "launchYear": 2011,
+    "dryMassKg": 1593,
+    "totalMassKg": 3625,
+    "powerSystem": "Three 9m Solar Wings (14,000W at Earth, ~450W at Jupiter)",
+    "propellantMassKg": 2032,
+    "costBillionUsd": 1.1,
+    "primaryInstruments": [
+      "Microwave Radiometer (MWR)",
+      "Jovian Infrared Auroral Mapper (JIRAM)",
+      "Magnetometer (MAG)",
+      "JunoCam"
+    ],
+    "keyEngineeringChallenge": "First mission to Jupiter powered by solar instead of nuclear RTGs, housed inside a 1-centimeter-thick titanium radiation vault.",
+    "educationalComparison": "Juno used an armored titanium vault weighing nearly 200 kg just to shield its computer from Jupiter's radiation belts. Without it, the electronics would have fried in weeks."
+  }
+]

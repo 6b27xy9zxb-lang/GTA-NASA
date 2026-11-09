@@ -1,0 +1,197 @@
+[
+  {
+    "id": "heavy-deflector-shield",
+    "name": "Heavy Deflector Shield",
+    "description": "Magnetic bubble emitter that deflects charged particle storms and small debris clouds.",
+    "category": "defense",
+    "mass": 85,
+    "powerConsumption": 90,
+    "cost": 24,
+    "hardpointCost": 1,
+    "canStack": false,
+    "effects": {
+      "hullBonus": 35,
+      "shieldBonus": 50,
+      "radiationResistanceBonus": 0.20
+    },
+    "resourceImpactsSummary": [
+      "+35 Hull integrity and +20% radiation deflection",
+      "+85 kg mass penalty reducing delta-V",
+      "-90 W continuous power drain on the spacecraft grid"
+    ]
+  },
+  {
+    "id": "deep-space-telescope",
+    "name": "Deep-Space Telescope",
+    "description": "High-aperture Cassegrain optical sensor suited for stellar navigation and remote target imaging.",
+    "category": "science",
+    "mass": 65,
+    "powerConsumption": 45,
+    "cost": 32,
+    "hardpointCost": 1,
+    "canStack": false,
+    "effects": {
+      "scienceMultiplier": 1.25,
+      "commRangeBonusAu": 0.5
+    },
+    "resourceImpactsSummary": [
+      "+25% Total mission science return",
+      "+65 kg mass addition reducing fuel efficiency",
+      "+45 W operational power load requiring steady supply"
+    ]
+  },
+  {
+    "id": "extra-fuel-tank",
+    "name": "Auxiliary Propellant Cell",
+    "description": "Conformal pressurized tank providing additional monopropellant / hydrazine capacity for trajectory burns.",
+    "category": "propulsion",
+    "mass": 40,
+    "powerConsumption": 5,
+    "cost": 16,
+    "hardpointCost": 1,
+    "canStack": true,
+    "effects": {
+      "fuelCapacityBonus": 350
+    },
+    "resourceImpactsSummary": [
+      "+350 kg propellant storage capacity",
+      "+40 kg dry mass overhead",
+      "+$16M addition to total mission expenditure"
+    ]
+  },
+  {
+    "id": "high-gain-antenna",
+    "name": "X-Band High-Gain Antenna",
+    "description": "Steerable 3.0-meter parabolic dish reflector capable of gigabit-class deep space telemetry downlinks.",
+    "category": "comms",
+    "mass": 55,
+    "powerConsumption": 70,
+    "cost": 28,
+    "hardpointCost": 1,
+    "canStack": false,
+    "effects": {
+      "commRangeBonusAu": 3.2,
+      "downlinkMultiplier": 1.6
+    },
+    "resourceImpactsSummary": [
+      "+60% Telemetry downlink capacity and +3.2 AU range",
+      "-70 W transmitter RF amplifier power consumption",
+      "+55 kg structural mass on the communications mast"
+    ]
+  },
+  {
+    "id": "radiation-shielding",
+    "name": "Polyethylene-Tantalum Armor",
+    "description": "Multi-layer radiation barrier that slows fast neutrons and stops trapped belt electrons at Jovian distances.",
+    "category": "defense",
+    "mass": 140,
+    "powerConsumption": 0,
+    "cost": 36,
+    "hardpointCost": 1,
+    "canStack": true,
+    "effects": {
+      "radiationResistanceBonus": 0.35,
+      "hullBonus": 20
+    },
+    "resourceImpactsSummary": [
+      "+35% Radiation absorption in harsh Jovian/deep space environments",
+      "+140 kg heavy mass penalty demanding higher launcher thrust",
+      "+$36M advanced materials acquisition cost"
+    ]
+  },
+  {
+    "id": "redundant-flight-computer",
+    "name": "Dual-Core Fault-Tolerant OBC",
+    "description": "Rad-hardened voting computer with autonomous watchdog recovery routines to prevent software lockouts.",
+    "category": "avionics",
+    "mass": 22,
+    "powerConsumption": 30,
+    "cost": 22,
+    "hardpointCost": 1,
+    "canStack": false,
+    "effects": {
+      "redundancyRating": 0.45
+    },
+    "resourceImpactsSummary": [
+      "+45% System reliability and automated anomaly recovery",
+      "+30 W constant avionics draw",
+      "+$22M software & rad-hard silicon fabrication cost"
+    ]
+  },
+  {
+    "id": "advanced-solar-wing",
+    "name": "Deployable UltraFlex Solar Wing",
+    "description": "Lightweight accordion-folding gallium-arsenide photovoltaic array with 32% solar cell efficiency.",
+    "category": "power",
+    "mass": 48,
+    "powerConsumption": -280,
+    "cost": 25,
+    "hardpointCost": 1,
+    "canStack": true,
+    "effects": {
+      "powerGenerationBonus": 280
+    },
+    "resourceImpactsSummary": [
+      "+280 W clean electrical generation at 1 AU",
+      "+48 kg boom and motorized hinge mass",
+      "Subject to 1/r² solar degradation at outer planetary orbits"
+    ]
+  },
+  {
+    "id": "rtg-power-unit",
+    "name": "Next-Gen MMRTG Unit",
+    "description": "Multi-Mission Radioisotope Thermoelectric Generator powered by Plutonium-238 decay heat. Distance-independent.",
+    "category": "power",
+    "mass": 75,
+    "powerConsumption": -180,
+    "cost": 48,
+    "hardpointCost": 1,
+    "canStack": true,
+    "effects": {
+      "powerGenerationBonus": 180
+    },
+    "resourceImpactsSummary": [
+      "+180 W constant baseload power unaffected by distance or eclipses",
+      "+$48M high-security nuclear isotope licensing & fuel cost",
+      "+75 kg bismuth-telluride thermoelectric package mass"
+    ]
+  },
+  {
+    "id": "engine-optimization-kit",
+    "name": "Ion Engine Optimization Kit",
+    "description": "Magnetic nozzle enhancement and xenon pre-heater improving propellant exhaust velocity.",
+    "category": "propulsion",
+    "mass": 35,
+    "powerConsumption": 50,
+    "cost": 30,
+    "hardpointCost": 1,
+    "canStack": false,
+    "effects": {
+      "ispBonus": 240
+    },
+    "resourceImpactsSummary": [
+      "+240 seconds Specific Impulse (Isp), saving hundreds of kg of fuel",
+      "-50 W plasma heating power requirement",
+      "+$30M precision magnetic nozzle alloy development"
+    ]
+  },
+  {
+    "id": "reinforced-hull-plating",
+    "name": "Titanium-Aerogel Micrometeorite Bumper",
+    "description": "Whipple shield barrier with closed-cell metal foam core to disperse hypervelocity particle impacts.",
+    "category": "defense",
+    "mass": 95,
+    "powerConsumption": 0,
+    "cost": 18,
+    "hardpointCost": 1,
+    "canStack": true,
+    "effects": {
+      "hullBonus": 60
+    },
+    "resourceImpactsSummary": [
+      "+60 Hull structural integrity against impacts and stress",
+      "+95 kg payload mass penalty lowering total delta-V margin",
+      "+$18M composite forge assembly cost"
+    ]
+  }
+]

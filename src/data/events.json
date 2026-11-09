@@ -1,0 +1,189 @@
+[
+  {
+    "id": "event-distress-beacon",
+    "title": "DISTRESS BEACON DETECTED",
+    "description": "An anomalous narrow-beam emergency beacon is transmitting from the shadow of a deep gravitational well. Telemetry registers exotic isotopic radiation and encrypted telemetry packets.",
+    "triggerPhase": "deep_space",
+    "triggerProgressPercent": 58,
+    "severity": "high_stakes",
+    "isHighStakesDistress": true,
+    "options": [
+      {
+        "id": "opt-distress-ignore",
+        "label": "Maintain Nominal Trajectory (Safe)",
+        "riskDescription": "No risk to spacecraft. Continue on primary mission flight plan.",
+        "riskProbabilityPercent": 0,
+        "successReward": "Spacecraft integrity and fuel margins fully preserved.",
+        "failurePenalty": "None",
+        "engineeringExplanation": "Flight Director protocol prioritizes primary mission objectives over unknown opportunistic encounters.",
+        "hullImpact": 0,
+        "fuelImpactKg": 0,
+        "powerImpactW": 0,
+        "scienceBonus": 0,
+        "isFatalOnFailure": false
+      },
+      {
+        "id": "opt-distress-investigate",
+        "label": "Execute Gravitational Burn & Investigate (HIGH RISK)",
+        "riskDescription": "Gravitational sheer stresses and unknown radiation field. 50% base success chance (modified by hull armor, shielding, avionics, and sensors). Fatal hull breach if maneuvers fail!",
+        "riskProbabilityPercent": 50,
+        "successReward": "+350 Rare Science Data, +120 kg salvaged high-grade propellant, and legendary Kepler sector telemetry!",
+        "failurePenalty": "CRITICAL HULL COLLAPSE: Instant mission loss and destruction of spacecraft.",
+        "engineeringExplanation": "Diverting into an uncharted gravity well subjects the spaceframe to tidal gradient torque and intense relativistic particle fluxes.",
+        "hullImpact": -25,
+        "fuelImpactKg": -65,
+        "powerImpactW": 0,
+        "scienceBonus": 350,
+        "isFatalOnFailure": true
+      }
+    ]
+  },
+  {
+    "id": "event-solar-flare",
+    "title": "Coronal Mass Ejection (Radiation Spike)",
+    "description": "A high-energy proton storm ejected from a solar flare is sweeping across the spacecraft's orbital path. Subsystems risk latch-up and thermal overload.",
+    "triggerPhase": "cruise",
+    "triggerProgressPercent": 28,
+    "severity": "critical",
+    "affectedSystem": "power",
+    "options": [
+      {
+        "id": "opt-flare-safe-mode",
+        "label": "Orient Shield Toward Sun & Enter Safe Mode",
+        "riskDescription": "Shuts down scientific instruments for 72 hours. Minor telemetry blackout.",
+        "riskProbabilityPercent": 10,
+        "successReward": "All electronic components protected. Minimal hull degradation (-5 HP).",
+        "failurePenalty": "Minor sensor calibration loss (-20 science).",
+        "engineeringExplanation": "Using the spacecraft bus as a shadow shield protects sensitive semiconductors while halting science operations.",
+        "hullImpact": -5,
+        "fuelImpactKg": 0,
+        "powerImpactW": -20,
+        "scienceBonus": 0
+      },
+      {
+        "id": "opt-flare-overcharge",
+        "label": "Ride the Storm & Maintain Active Sensor Collection",
+        "riskDescription": "Collect unique magnetosphere solar wind data, but risk severe circuit degradation.",
+        "riskProbabilityPercent": 40,
+        "successReward": "+85 Bonus Solar Science points gathered from active sensor recording.",
+        "failurePenalty": "-35 Hull HP and 15% permanent solar panel degradation.",
+        "engineeringExplanation": "High energy protons cause displacement damage in silicon solar arrays and bit-flips in unshielded registers.",
+        "hullImpact": -25,
+        "fuelImpactKg": 0,
+        "powerImpactW": -60,
+        "scienceBonus": 85
+      }
+    ]
+  },
+  {
+    "id": "event-micrometeorite",
+    "title": "Micrometeorite Swarm Penetration",
+    "description": "Hypervelocity interplanetary dust grains have struck the service module exterior. Pressure sensors in the propellant manifold trigger an audible warning.",
+    "triggerPhase": "cruise",
+    "triggerProgressPercent": 42,
+    "severity": "moderate",
+    "affectedSystem": "propulsion",
+    "options": [
+      {
+        "id": "opt-isolate-valves",
+        "label": "Isolate Fuel Manifold & Vent Affected Sector",
+        "riskDescription": "Loses 45 kg of propellant, but stops further structural cascade.",
+        "riskProbabilityPercent": 15,
+        "successReward": "Propellant line sealed safely. Hull stabilized at -15 HP.",
+        "failurePenalty": "Additional 25 kg propellant vented before valve locks.",
+        "engineeringExplanation": "Fast isolation valves prevent propellant tank depolymerization at the cost of the vented sector volume.",
+        "hullImpact": -15,
+        "fuelImpactKg": -45,
+        "powerImpactW": 0,
+        "scienceBonus": 0
+      },
+      {
+        "id": "opt-sealant-gel",
+        "label": "Inject Autonomous Sealant Gel & Fire RCS",
+        "riskDescription": "Conserves fuel if successful, but requires quick avionics reaction.",
+        "riskProbabilityPercent": 35,
+        "successReward": "Zero fuel lost! Whipple bumper composite self-heals.",
+        "failurePenalty": "-30 HP hull breach and 80 kg propellant loss.",
+        "engineeringExplanation": "Polymer sealant relies on ambient temperature gradients; if puncture is too wide, gel flashes into vacuum.",
+        "hullImpact": -10,
+        "fuelImpactKg": -15,
+        "powerImpactW": -15,
+        "scienceBonus": 15
+      }
+    ]
+  },
+  {
+    "id": "event-comm-anomaly",
+    "title": "X-Band Downlink Gimbal Anomaly",
+    "description": "The high-gain antenna azimuth tracking motor has seized at a 14-degree offset from Earth nadir, attenuating carrier signal strength.",
+    "triggerPhase": "science_ops",
+    "triggerProgressPercent": 75,
+    "severity": "minor",
+    "affectedSystem": "comms",
+    "options": [
+      {
+        "id": "opt-slew-spacecraft",
+        "label": "Slew Entire Spacecraft Body to Align Antenna",
+        "riskDescription": "Uses reaction wheels and 20 kg RCS hydrazine to point the entire frame toward Earth.",
+        "riskProbabilityPercent": 10,
+        "successReward": "Full 100% telemetry link restored. No data lost.",
+        "failurePenalty": "Consumes 40 kg extra fuel due to momentum desaturation.",
+        "engineeringExplanation": "Body-pointing compensates for mechanically seized gimbals, transferring work from antenna motors to reaction thrusters.",
+        "hullImpact": 0,
+        "fuelImpactKg": -20,
+        "powerImpactW": 0,
+        "scienceBonus": 0
+      },
+      {
+        "id": "opt-low-gain-fallback",
+        "label": "Switch to Low-Gain Omni Antenna (Lossy)",
+        "riskDescription": "No fuel expenditure, but downlink data throughput drops by 60%.",
+        "riskProbabilityPercent": 5,
+        "successReward": "Safe fallback without propellant expenditure.",
+        "failurePenalty": "High-volume imagery discarded due to downlink buffer saturation.",
+        "engineeringExplanation": "Low-gain omni antennas have low EIRP gain and cannot sustain wideband transmission over interplanetary distances.",
+        "hullImpact": 0,
+        "fuelImpactKg": 0,
+        "powerImpactW": 20,
+        "scienceBonus": -30
+      }
+    ]
+  },
+  {
+    "id": "event-unusual-signal",
+    "title": "Unusual Subsurface Resonance Signal",
+    "description": "Scientific instruments detect harmonic acoustic and electromagnetic oscillations resonating from deep beneath the crust.",
+    "triggerPhase": "science_ops",
+    "triggerProgressPercent": 88,
+    "severity": "minor",
+    "affectedSystem": "science",
+    "options": [
+      {
+        "id": "opt-deep-scan",
+        "label": "Reconfigure Spectrometer & Run Long-Integration Scan",
+        "riskDescription": "Draws 75 W extra power for 48 hours to boost signal-to-noise ratio.",
+        "riskProbabilityPercent": 20,
+        "successReward": "+120 High-Value Breakthrough Science points logged!",
+        "failurePenalty": "Temporary battery brownout forces 24-hr diagnostic reset.",
+        "engineeringExplanation": "Long-exposure Fourier integration pulls periodic signals out of thermal noise, confirming hydrothermal venting.",
+        "hullImpact": 0,
+        "fuelImpactKg": 0,
+        "powerImpactW": -50,
+        "scienceBonus": 120
+      },
+      {
+        "id": "opt-log-standard",
+        "label": "Record Standard Raw Baseline & Continue",
+        "riskDescription": "Standard telemetry mode with zero risk to power reserve.",
+        "riskProbabilityPercent": 0,
+        "successReward": "+25 Standard Science recorded.",
+        "failurePenalty": "None",
+        "engineeringExplanation": "Maintains mission timeline margins without stressing electrical balance.",
+        "hullImpact": 0,
+        "fuelImpactKg": 0,
+        "powerImpactW": 0,
+        "scienceBonus": 25
+      }
+    ]
+  }
+]

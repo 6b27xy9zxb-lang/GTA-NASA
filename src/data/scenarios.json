@@ -1,0 +1,143 @@
+[
+  {
+    "id": "scenario-earth",
+    "title": "Earth Observation Sentinel",
+    "destination": "Low Earth Orbit (550 km SSO)",
+    "destinationOrbitId": "orbit-leo",
+    "difficulty": "Beginner",
+    "budgetLimitMillion": 150,
+    "massLimitKg": 1800,
+    "missionDurationYears": 2,
+    "minScienceGoal": 200,
+    "description": "Design a high-yield Earth observation satellite to monitor climate patterns, deforestation, and atmospheric dynamics. Must ensure reliable downlink to ground stations during frequent ground passes.",
+    "objectives": [
+      "Keep total mission budget under $150M",
+      "Ensure sufficient electrical power during orbital eclipse phases",
+      "Deploy multispectral cameras and spectrometers for environmental monitoring",
+      "Maintain downlink throughput above data generation rate"
+    ],
+    "scientificGoals": [
+      "Generate high-resolution surface maps with minimal data loss",
+      "Measure atmospheric CO2 and aerosol optical depth",
+      "Survive 2 years of continuous orbital thermal cycling"
+    ],
+    "environmentalChallenges": [
+      "Frequent eclipse shadow periods requiring steady battery capacity",
+      "High atmospheric drag at lower orbital altitudes",
+      "Rapid ground station contact windows (10-15 min per pass)"
+    ],
+    "educationalNotes": "Earth orbit missions benefit from full 1.0 AU solar flux (1361 W/m\u00b2), but pass through Earth's shadow every 90 minutes. Adequate battery capacity is mandatory.",
+    "recommendedInstruments": [
+      "inst-wide-camera",
+      "inst-spectrometer",
+      "inst-thermal-imager"
+    ]
+  },
+  {
+    "id": "scenario-moon",
+    "title": "Lunar Water-Ice Mapper",
+    "destination": "Lunar Polar Orbit (100 km)",
+    "destinationOrbitId": "orbit-moon",
+    "difficulty": "Beginner",
+    "budgetLimitMillion": 330,
+    "massLimitKg": 2500,
+    "missionDurationYears": 3,
+    "minScienceGoal": 350,
+    "description": "Chart permanently shadowed craters at the lunar south pole to locate volatile water-ice deposits critical for future Artemis base camps. Must balance mass, power, and high-frequency radar sounding.",
+    "objectives": [
+      "Execute lunar insertion burn with positive delta-V margin",
+      "Deploy laser altimeter and radar sounder to detect subsurface volatiles",
+      "Maintain telemetry link with NASA Deep Space Network stations",
+      "Ensure structural hull survives cislunar transit and micrometeorite fluxes"
+    ],
+    "scientificGoals": [
+      "Map south pole crater depths down to 1-meter vertical accuracy",
+      "Identify subsurface hydrogen signatures via neutron/radar spectroscopy",
+      "Establish gravity gradient anomalies for future lunar landings"
+    ],
+    "environmentalChallenges": [
+      "Extreme thermal gradients (+120\u00b0C in sunlight to -230\u00b0C in shadowed craters)",
+      "Solar wind particle bombardment outside Earth's magnetosphere",
+      "Lunar mass concentrations (mascons) perturbing low orbits"
+    ],
+    "educationalNotes": "The Moon has no atmosphere and sits outside Earth's protective magnetic field. Radiation and thermal control become primary engineering drivers.",
+    "recommendedInstruments": [
+      "inst-radar",
+      "inst-laser-altimeter",
+      "inst-highres-camera",
+      "inst-thermal-imager"
+    ]
+  },
+  {
+    "id": "scenario-mars",
+    "title": "Mars Climate & Atmospheric Orbiter",
+    "destination": "Mars Areocentric Orbit (350 km)",
+    "destinationOrbitId": "orbit-mars",
+    "difficulty": "Intermediate",
+    "budgetLimitMillion": 460,
+    "massLimitKg": 2200,
+    "missionDurationYears": 4,
+    "minScienceGoal": 500,
+    "description": "Investigate the red planet's atmospheric loss mechanisms, historical climate shifts, and seasonal dust storm dynamics. Demands efficient propulsion for interplanetary transit and communications across up to 20 light-minutes.",
+    "objectives": [
+      "Calculate and survive Mars orbital capture delta-V",
+      "Compensate for reduced solar flux at 1.52 AU (43% of Earth's solar intensity)",
+      "Downlink high-definition hyperspectral data with realistic light-time delays",
+      "Survive solar particle events during cruise phase"
+    ],
+    "scientificGoals": [
+      "Track atmospheric escape rates of hydrogen and oxygen ions",
+      "Characterize seasonal polar cap sublimation and ice inventory",
+      "Locate potential past aqueous habitability zones"
+    ],
+    "environmentalChallenges": [
+      "Solar irradiance drops to 590 W/m\u00b2 (requires larger solar arrays or RTG)",
+      "Round-trip communication delay between 6 and 44 minutes prevents real-time teleoperation",
+      "Deep space radiation during the 7-month cruise phase"
+    ],
+    "educationalNotes": "Because Mars orbits at 1.52 AU, solar flux drops by 1/r\u00b2 = 1/(1.52)\u00b2 \u2248 43%. A solar panel that outputs 1000W at Earth will only yield 433W at Mars!",
+    "recommendedInstruments": [
+      "inst-spectrometer",
+      "inst-highres-camera",
+      "inst-magnetometer",
+      "inst-thermal-imager"
+    ]
+  },
+  {
+    "id": "scenario-europa",
+    "title": "Europa Life Search & Ocean Explorer",
+    "destination": "Europa Jovian Resonance Orbit",
+    "destinationOrbitId": "orbit-europa",
+    "difficulty": "Advanced",
+    "budgetLimitMillion": 650,
+    "massLimitKg": 2000,
+    "missionDurationYears": 5,
+    "minScienceGoal": 700,
+    "description": "Humanity's most audacious outer-solar mission: Probe Jupiter's moon Europa to determine if its subsurface saltwater ocean harbors conditions suitable for extraterrestrial life. Extreme radiation and extreme distance test every engineering subsystem.",
+    "objectives": [
+      "Comply with strict $500M budget and 2,000 kg total spacecraft mass limits",
+      "Survive lethal trapped radiation belts around Jupiter (thousands of times Earth levels)",
+      "Provide steady baseload power at 5.2 AU where sunlight is only 3.7% of Earth's",
+      "Deploy ice-penetrating radar to measure ice shell thickness above the liquid ocean"
+    ],
+    "scientificGoals": [
+      "Sound through the 15-25 km ice crust to detect liquid water interfaces",
+      "Search for active vapor plumes and organic biosignature molecules",
+      "Measure induced magnetic dipole confirming global saline ocean conductivity"
+    ],
+    "environmentalChallenges": [
+      "Sunlight is only 3.7% (1/5.2\u00b2 = 0.037) of Earth flux: solar panels become massive and ineffective",
+      "Jupiter's intense magnetosphere bombards spacecraft with relativistic electrons (>100 krad)",
+      "Light delay exceeds 40 minutes each way; autonomous fault response is critical",
+      "Mass limit of 2,000 kg requires extreme optimization between shielding, instruments, and fuel"
+    ],
+    "educationalNotes": "Europa is the ultimate engineering crucible. Solar arrays require massive area (like Europa Clipper's 30-meter wings) or heavy, costly RTGs. Radiation shielding is non-negotiable.",
+    "recommendedInstruments": [
+      "inst-radar",
+      "inst-spectrometer",
+      "inst-magnetometer",
+      "inst-seismometer",
+      "inst-highres-camera"
+    ]
+  }
+]
